@@ -20,3 +20,9 @@ let str="334";
 let num=Number(str);
 console.log(typeof num);
 console.log(num);
+
+console.log('1'+1);
+console.log(1+'1');
+console.log('1'+1+2);
+console.log(1+1+'2');
+console.log(1+1+'2'+3);
