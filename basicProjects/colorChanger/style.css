@@ -1,0 +1,36 @@
+nav{
+  background-color: #212121;
+  color :#fff;
+  height: 30px;
+  padding-left: 40%;
+  
+}
+.button{
+     
+    background-color: red;
+    border-width: 2px;
+    height: 100px;
+    display: inline-block;
+    width: 100px;
+    margin: 5px;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+}
+.canvas{
+    padding-left: auto;
+    padding-right: auto;
+}
+#gray{
+    background-color: gray;
+}
+#wheat{
+    background-color:wheat;
+}
+#blue{
+    background-color: blue;
+}
+#yellow{
+    background-color: yellow;
+}

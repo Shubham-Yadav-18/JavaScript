@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document edit and remmoval</title>
+</head>
+<body style="background-color: #212221; color: #fff;">
+      <ul class="language">
+         <li>JavaScript</li>
+      </ul>
+</body>
+<script>
+
+   function addLang(lang){
+      const li=document.createElement('li');
+      li.innerHTML=lang;
+      document.querySelector('.language').appendChild(li);
+   } 
+   addLang("c++")  ;
+
+  function addLangOpti(lang){
+      const li= document.createElement('li');
+      li.appendChild(document.createTextNode(lang));
+      document.querySelector('.language').appendChild(li);
+  }
+  addLangOpti("Python");
+
+//   editing 
+  const secLang=document.querySelector("li:nth-child(2)");
+  console.log(secLang);
+//   secLang.innerHTML="java"
+ const Newli=document.createElement('li');
+ Newli.textContent="golang";
+ secLang.replaceWith(Newli);
+
+//  remove
+ lastLang=document.querySelector('li:last-child');
+//  lastLang.remove()
+ 
+
+</script>
+</html>
