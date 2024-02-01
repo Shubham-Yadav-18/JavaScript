@@ -1,0 +1,16 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: #212121;
+    color: #fff;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.time{
+    background-color:cornflowerblue;
+}
