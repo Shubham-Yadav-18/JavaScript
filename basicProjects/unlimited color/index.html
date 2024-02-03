@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <h1>start button should start changing the background color and stop button will stop </h1>
+       <button id="start">Start</button>
+       <button id="stop">Stop</button>
+</body>
+<script>
+    
+    //    console.log(color);
+      const changeColor=()=>{
+           document.querySelector('body').style.backgroundColor='#'+(Math.random().toFixed(6)*1000000)
+      }
+      let ref
+      document.querySelector('#start').addEventListener('click',()=>{
+          if(!ref) ref= setInterval(changeColor,1000);
+      })
+      document.querySelector('#stop').addEventListener('click',()=>{
+          clearInterval(ref);
+          ref=null;
+      })
+</script>
+</html>
